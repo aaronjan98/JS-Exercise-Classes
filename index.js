@@ -113,7 +113,7 @@ class Lambdasian {
     this.location = attr.location;
   }
   speak(){
-    return `Hellow my name is ${this.name}, I am from ${this.location}`;
+    return `Hello my name is ${this.name}, I am from ${this.location}`;
   }
 }
 
@@ -134,6 +134,9 @@ class Lambdasian {
 class Instructor extends Lambdasian{
   constructor(attr){
     super(attr);
+    this.specialty = 'redux';
+    this.favLanguage = 'Javascript';
+    this.catchPhrase = "Don't forget the homies";
   }
 }
 
