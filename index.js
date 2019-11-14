@@ -112,7 +112,7 @@ class Lambdasian {
     this.age = attr.age;
     this.location = attr.location;
   }
-  speak{
+  speak(){
     return `Hellow my name is ${this.name}, I am from ${this.location}`;
   }
 }
