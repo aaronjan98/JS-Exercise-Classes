@@ -51,6 +51,9 @@ class Person {
       this.stomach.push(food);
     }
   }
+  poop(){
+    this.stomach.length = 0;
+  }
 }
 
 /*
