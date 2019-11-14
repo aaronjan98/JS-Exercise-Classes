@@ -134,11 +134,18 @@ class Lambdasian {
 class Instructor extends Lambdasian{
   constructor(attr){
     super(attr);
-    this.specialty = 'redux';
-    this.favLanguage = 'Javascript';
-    this.catchPhrase = "Don't forget the homies";
+    this.specialty = attr.specialty;
+    this.favLanguage = attr.favLanguage;
+    this.catchPhrase = attr.catchPhrase;
+  }
+  demo(subject){
+    return `Today we are learning a ${subject}`
+  }
+  grade(student, subject){
+    return `${student.name} receives a perfect score on ${subject}`
   }
 }
+
 
 /*
   TASK 5
